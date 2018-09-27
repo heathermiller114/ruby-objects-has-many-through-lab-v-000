@@ -13,6 +13,11 @@ class Doctor
   end
   
   def new_appointment(patient, date)
+    Appointment.new(paitent, self, date)
+  end
+  
+  def appointments
+    Appointment.all.select do |
   
   
 end
